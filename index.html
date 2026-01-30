@@ -1,378 +1,200 @@
 <!DOCTYPE html>
 <html lang="ru">
+<!--https://hosting.timeweb.ru/-->
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mercedes Benz</title>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./css/style.min.css">
-	<script src="/js/tabs.js" defer></script>
-	<script src="/js/modal.js" defer></script>
-	<script src="/js/menu.js" defer></script>
-	<script src="/js/accordeon.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruslan Mansurov</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<!-- header (start) -->
-	<header class="header">
-		<div class="container">
-			<div class="header-wrapper">
-				<div class="header-main">
-					<a href="#main" class="logo header__logo">
-						<img src="img/logo.svg" alt="Logo: A 200" class="logo__img">
-					</a>
-					<!-- /.logo -->
-					<nav class="menu">
-						<ul class="menu-list">
-							<li class="menu-list__item">
-								<a href="#design" class="menu-list__link">
-									Портфолио</a>
-							</li>
-							<li class="menu-list__item">
-								<a href="#feature" class="menu-list__link">
-									Цены</a>
-							</li>
-							<li class="menu-list__item">
-								<a href="#contacts" class="menu-list__link">
-									Заказать разработку</a>
-							</li>
-						</ul>
-					</nav>
-					<!-- /.menu -->
-				</div>
-				<!-- /.header-main -->
-				<a href="tel:88005437809" class="phone">
-					8 800 543 78 09
-				</a>
-				<button class="humburger-menu" aria-label="Бургер меню">
-				</button>
-			</div>
-			<!-- /.header-wrapper -->
-		</div>
-	</header>
-	<!-- header (end) -->
+    <div class="navbar container">
+        <img src="images/logo.svg" alt="Logo">
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#main" class="nav-link active">Главная</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Проекты</a></li>
+                <li class="nav-item"><a href="#developer" class="nav-link">Обо мне</a></li>
+                <li class="nav-item"><a href="#feedback" class="nav-link">Связаться</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- ./navbar -->
 
-	<!-- main (start) -->
-	<section class="main" id="main">
-		<div class="container">
-			<div class="main-wrapper">
-				<div class="offer">
-					<div class="offer__text">
-						<div>
-							<h1 class="main__title">Разрабатываю веб-сайты и&nbsp;приложения для&nbsp;малого бизнеса
-							</h1>
-							<p class="main__descr">От простых страниц до больших интернет-магазинов. Сроки — от 5 дней.
-							</p>
-
-							<a href="#contacts" type="button" class="button main__button">
-								Тест-драйв
-							</a>
-						</div>
-						<img class="offer__photo" src="./img/photo.png" alt="Фото">
-					</div>
-
-					<a href="#design" class="main__scroll" aria-label="к следующему экрану"></a>
-
-				</div>
-			</div>
-			<!-- /.main-wrapper -->
-		</div>
-	</section>
-	<!-- main (end) -->
-
-	<!-- design (start) -->
-	<section class="section design" id="design">
-		<div class="container">
-			<div class="design-wrapper">
-				<div class="design-block">
-					<img src="img/example/image-1.png" alt="A 200" class="feature__img design-block__img"
-						data-tabs-field="interior">
-					<img src="img/example/image-2.png" alt="A 200" class="feature__img design-block__img hidden"
-						data-tabs-field="body">
-					<div class="design-text">
-						<h2 class="section__title design__title">
-							Портфолио&nbsp;</h2>
-						<h2 class="section__title design__title hidden">
-							Притягивает взгляды
-						</h2>
-						<ul class="design-list">
-							<li>
-								<button type="button" class="design-list__item design-list__item_active"
-									data-tabs-handler="interior" data-some-attr="attr">Примеры сайтов</button>
-							</li>
-							<li>
-								<button type="button" class="design-list__item" data-tabs-handler="body">Примеры
-									приложений</button>
-							</li>
-						</ul>
-						<!-- /.design-list -->
-						<ul>
-							<li class="design__descr" data-tabs-field="interior">
-								<p class="design__description-text">
-									Разработал больше 30 сайтов и веб-приложений разной сложности. От страниц по продаже
-									спортивного питания до приложения для сети городских пиццерий. Подхожу к работе как
-									ваш партнёр: делаю работу качественно, держу в курсе, сдаю вовремя, помогаю
-									сэкономить бюджет там, где это можно сделать без потери качества.</p>
-								<button class="more">
-									— Узнать больше
-								</button>
-							</li>
-							<li class="design__descr hidden" data-tabs-field="body">
-								<p class="design__description-text">
-									Благодаря длинной задней части, новый A-Class Sedan обладает еще лучшими
-									аэродинамическими показателями, чем A-Class Hatchback (Cd от 0,25). С показателем
-									0,22 новая модель седана сравнялась с мировым рекордом CLA Coupe. A-Class Sedan
-									имеет самое низкое аэродинамическое сопротивление среди всех серийных автомобилей в
-									мире.
-								</p>
-								<button class="more">
-									— Узнать больше
-								</button>
-							</li>
-						</ul>
-					</div>
-					<!-- /.design-text -->
-				</div>
-				<!-- /.design-block -->
-				<ul>
-					<li class="design-images" data-tabs-field="interior">
-						<img src="img/design/image-1.png" alt="A 200" class="design__img">
-						<img src="img/design/image-2.png" alt="A 200" class="design__img">
-						<img src="img/design/image-3.jpg" alt="A 200" class="design__img">
-						<img src="img/design/image-4.jpg" alt="A 200" class="design__img">
-					</li>
-					<li class="design-images hidden" data-tabs-field="body">
-						<img src="img/design/image-5.png" alt="A 200" class="design__img">
-						<img src="img/design/image-6.png" alt="A 200" class="design__img">
-						<img src="img/design/image-7.png" alt="A 200" class="design__img">
-						<img src="img/design/image-8.jpg" alt="A 200" class="design__img">
-					</li>
-				</ul>
-			</div>
-			<!-- /.design-wrapper -->
-		</div>
-	</section>
-	<!-- design (end) -->
-
-	<!-- feature (start) -->
-	<section class="section feature" id="feature">
-		<div class="container">
-			<div class="feature-wrapper">
-				<div class="feature-block">
-					<h2 class="section__title feature__title">
-						Примеры цен на разработку</h2>
-					<ul class="feature-list">
-						<li class="feature__item">
-							<button type="button" class="feature__link feature__link_active">
-								<div class="feature-item-wrap">
-									<span class="feature-item__title">
-										Одностраничные сайты
-									</span>
-								</div>
-							</button>
-							<!-- /.feature__link -->
-							<ul class="feature-sub">
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Правки по вашему сайту
-									</span>
-									<span class="feature-sub__value">
-										800р/час
-									</span>
-								</li>
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Разработка сайта с нуля
-									</span>
-									<span class="feature-sub__value">
-										от 15000 рублей
-									</span>
-								</li>
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Разработка новых страниц</span>
-									<span class="feature-sub__value">
-										от 5000 рублей
-									</span>
-								</li>
-							</ul>
-							<!-- /.feature-list-sub -->
-						</li>
-						<li class="feature__item">
-							<button type="button" class="feature__link">
-								<div class="feature-item-wrap">
-									<span class="feature-item__title">
-										Многостраничные сайты
-									</span>
-								</div>
-							</button>
-							<ul class="feature-sub hidden">
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Сайт под ключ
-									</span>
-									<span class="feature-sub__value">
-										от 30000 рублей
-									</span>
-								</li>
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Посадка готовой верстки на Wordpress
-									</span>
-									<span class="feature-sub__value">
-										от 50000 рублей
-									</span>
-								</li>
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Доработка дизайна страниц
-									</span>
-									<span class="feature-sub__value">
-										от 4000 рублей
-									</span>
-								</li>
-							</ul>
-						</li>
-						<li class="feature__item">
-							<button type="button" class="feature__link">
-								<div class="feature-item-wrap">
-									<span class="feature-item__title">
-										Приложения
-									</span>
-								</div>
-							</button>
-							<ul class="feature-sub hidden">
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Разработка для iOS
-									</span>
-									<span class="feature-sub__value">
-										от 60000 рублей
-									</span>
-								</li>
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Разработка для Android
-									</span>
-									<span class="feature-sub__value">
-										от 45000 рублей
-									</span>
-								</li>
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Защита приложения
-									</span>
-									<span class="feature-sub__value">
-										от 70000 рублей
-									</span>
-								</li>
-							</ul>
-						</li>
-						<li class="feature__item">
-							<button type="button" class="feature__link">
-								<div class="feature-item-wrap">
-									<span class="feature-item__title">
-										Интеграции сторонних сервисов
-									</span>
-								</div>
-							</button>
-							<ul class="feature-sub hidden">
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Подключение метрики
-									</span>
-									<span class="feature-sub__value">
-										от 1000 рублей
-									</span>
-								</li>
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Подключение textolite
-									</span>
-									<span class="feature-sub__value">
-										от 1000 рублей
-									</span>
-								</li>
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Подключение чат-бота
-									</span>
-									<span class="feature-sub__value">
-										от 3000 рублей
-									</span>
-								</li>
-							</ul>
-						</li>
-					</ul>
-					<!-- /.feature-list -->
-				</div>
-				<!-- /.feature-block -->
-			</div>
-			<!-- /.feature-wrapper -->
-		</div>
-	</section>
-	<!-- feature (end) -->
-
-	<!-- /.timer start-->
-	<div class="timer">
-		<p class="timer__text">до 31 марта скидка 20% на все услуги</p>
-		<p class="timer__time">21:13:33</p>
-	</div>
-	<!-- /.timer -->
-
-	<!-- contacts (start) -->
-	<section class="section contacts" id="contacts">
-		<div class="container">
-			<div class="contacts-wrapper">
-				<div class="contacts-form">
-					<h2 class="section__title">
-						Заявка на разработку</h2>
-					<p class="contacts__descr">
-						Оставьте контакты, по которым я смогу с вами связаться и обсудить проект</p>
-					<form class="form form-test-drive">
-						<input type="text" class="input" name="name" placeholder="Имя">
-						<input type="mail" class="input" name="mail" placeholder="Электронная почта">
-						<input type="text" class="input" name="phone" placeholder="Телефон">
-						<button type="submit" class="button form__button">
-							Отправить
-						</button>
-					</form>
-				</div>
-				<!-- /.contacts-form -->
-			</div>
-			<!-- /.contacts-wrapper -->
-		</div>
-	</section>
-	<!-- contacts (end) -->
-
-	<!-- modal (start) -->
-	<div class="modal hidden">
-		<div class="overlay"></div>
-		<div class="modal-wrapper">
-			<h2 class="section__title modal__title">
-				Консультация по вашему сайту
-			</h2>
-			<p class="modal__descr">
-				Оставьте адрес электронной почты, по которому с вами можно связаться
-			</p>
-			<button type="button" class="modal__close" aria-label="закрыть модальное окно">
-			</button>
-			<form class="form modal__form">
-				<input type="text" name="name" class="input modal__input" placeholder="Имя">
-				<input type="mail" name="mail" class="input modal__input" placeholder="Электронная почта">
-				<div class="modal-buttons">
-					<button type="submit" class="button modal__button">
-						Оставить заявку
-					</button>
-				</div>
-			</form>
-			<!-- /.form modal__form -->
-		</div>
-	</div>
-	<!-- modal (end) -->
+    <header class="header container" id="main">
+        <img src="images/avatar.png" alt="avatar" class="header-foto">
+        <!-- /.header-foto -->
+        <div class="header-text">
+            <strong class="header-strong">
+                Привет 👋
+            </strong>
+            <h1 class="header-heading">
+                <span class="header-primary">
+                    Я фронтенд-разработчик и веб-дизайнер
+                </span> <br />Меня зовут Артем Исламов и я делаю сайты для людей и
+                компаний
+            </h1>
+            <div class="header-links">
+                <ul class="social-list">
+                    <li class="social-item"><a href="" class="social-link"><img src="images/Icons/linkedin.svg"
+                                alt="linkedin" class="social-logo"></a>
+                    </li>
+                    <li class="social-item"><a href="" class="social-link"><img src="images/Icons/twitter.svg"
+                                alt="twitter" class="social-logo"></a>
+                    </li>
+                    <li class="social-item"><a href="" class="social-link"><img src="images/Icons/github.svg"
+                                alt="github" class="social-logo"></a>
+                    </li>
+                    <li class="social-item"><a href="" class="social-link"><img src="images/Icons/stackoverflow.svg"
+                                alt="stackoverflow" class="social-logo"></a>
+                    </li>
+                    <li class="social-item"><a href="" class="social-link"><img src="images/Icons/youtube.svg"
+                                alt="youtube" class="social-logo"></a>
+                    </li>
+                </ul>
+                <a href="cv.pdf" class="cv-download" download="">
+                    <img src="images/Icons/cv.svg" alt="download-icon" class="cv-icon">
+                    <span class="cv-text">Скачать резюме</span>
+                </a>
+            </div>
+            <!-- /.header-links -->
+        </div>
+        <!-- /.header-text -->
+    </header>
+    <!-- /.header -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-heading">Последние проекты</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/portfolio/image 1.png" alt="Мобильное приложение" class="card-image">
+                    <div class="card-text-wrapper">
+                        <h3 class="card-title">Мобильное приложение</h3>
+                        <ul class="tags">
+                            <li class="tags-item"><a href="#" class="tag">HTML</a></li>
+                            <li class="tags-item"><a href="#" class="tag">CSS</a></li>
+                            <li class="tags-item"><a href="#" class="tag">JavaScript</a></li>
+                            <li class="tags-item"><a href="#" class="tag">Git</a></li>
+                            <li class="tags-item"><a href="#" class="tag">Vitejs</a></li>
+                        </ul>
+                        <p class="card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                            deserunt mollit anim id est laborum.
+                        </p>
+                        <div class="card-buttons">
+                            <a href="#" class="card-button">
+                                <img src="images/Icons/code.svg" alt="code icon" class="card-button-icon">
+                                <span class="card-button-text">Код</span>
+                            </a>
+                            <a href="#" class="card-button">
+                                <img src="images/Icons/check.svg" alt="check icon" class="card-button-icon">
+                                <span class="card-button-text">Демо</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.card-text-wrapper -->
+                <!-- /.card -->
+                <div class="cards">
+                    <div class="card">
+                        <img src="images/portfolio/image 2.png" alt="Одностраничный промо-сайт" class="card-image">
+                        <div class="card-text-wrapper">
+                            <h3 class="card-title">Одностраничный промо-сайт</h3>
+                            <ul class="tags">
+                                <li class="tags-item"><a href="#" class="tag">HTML</a></li>
+                                <li class="tags-item"><a href="#" class="tag">CSS</a></li>
+                            </ul>
+                            <p class="card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia
+                                deserunt mollit anim id est laborum.
+                            </p>
+                            <div class="card-buttons">
+                                <a href="#" class="card-button">
+                                    <img src="images/Icons/code.svg" alt="code icon" class="card-button-icon">
+                                    <span class="card-button-text">Код</span>
+                                </a>
+                                <a href="#" class="card-button">
+                                    <img src="images/Icons/check.svg" alt="check icon" class="card-button-icon">
+                                    <span class="card-button-text">Демо</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.card-text-wrapper -->
+                    <!-- /.card -->
+                </div>
+                <!-- /.cards -->
+            </div>
+            <!-- /.container -->
+    </section>
+    <!-- /.portfolio -->
+    <section class="developer container" id="developer">
+        <img src="images/developer-photo.png" alt="Артем Исламов" class="developer-photo">
+        <div class="developer-about">
+            <span class="developer-hello">Рад вас видеть</span>
+            <h2 class="developer-title">Я Артем Исламов </h2>
+            <p class="developer-text">Я разрабатываю сайты для людей и компаний. Делаю всё сам: составляю прототип,
+                дизайн-макет, пишу код.</p>
+            <span class="motto">Код, Дизайн, Обучение</span>
+            <p class="developer-text">
+                Могу собрать страницу для вашей компании, даже если запускать её нужно уже завтра. Из инструментов есть:
+                Tilda, Webflow, Figma, HTML, CSS, JavaScript и Wordpress
+            </p>
+            <img src="images/sign.png" alt="Подпись: Артем Исламов" class="developer-sign">
+        </div>
+        <!-- /.developer-about -->
+    </section>
+    <!-- /.developer container -->
+    <section class="skills container" id="skills">
+        <h2 class="skills-title">Работаю с разными языками и инструментами</h2>
+        <ul class="tags">
+            <li class="tags-item"><a href="#" class="tag">HTML</a></li>
+            <li class="tags-item"><a href="#" class="tag">CSS</a></li>
+            <li class="tags-item"><a href="#" class="tag">JavaScript</a></li>
+            <li class="tags-item"><a href="#" class="tag">Wordpress</a></li>
+            <li class="tags-item"><a href="#" class="tag">npm</a></li>
+            <li class="tags-item"><a href="#" class="tag">Reactjs</a></li>
+            <li class="tags-item"><a href="#" class="tag">Nextjs</a></li>
+            <li class="tags-item"><a href="#" class="tag">UI Design</a></li>
+            <li class="tags-item"><a href="#" class="tag">SASS</a></li>
+        </ul>
+    </section>
+    <!-- /.skills -->
+    <section class="feedback" id="feedback">
+        <img src="images/hand.png" alt="hand" class="feedback-hand">
+        <div class="form-container">
+            <h2 class="feedback-title">Готов обсудить проект...</h2>
+            <form action="#" class="form">
+                <div class="input-group">
+                    <label for="userName" class="input-label">Имя</label>
+                    <input id="userName" name="client_name" type="text" class="input">
+                </div>
+                <div class="input-group">
+                    <label for="userEmail" class="input-label">Email</label>
+                    <input id="userEmail" name="client_email" type="text" class="input">
+                </div>
+                <div class="input-group">
+                    <label for="userMessage" class="input-label">Сообщение</label>
+                    <textarea id="userMessage" name="client_message" cols="30" rows="30"
+                        class="input textarea"></textarea>
+                </div>
+                <!-- /.input-group -->
+                <div class="button-group">
+                    <button type="submit" class="submit-button">
+                        <img src="images/Icons/send.svg" alt="send-icon" class="cv-icon">
+                        <span class="cv-send">Отправить</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- /.feedback -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
